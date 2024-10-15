@@ -1,5 +1,6 @@
-node_modules/*
-!node_modules/coZ
+*/build/*
+*/node_modules/*
+!*/node_modules/coZ
 .vscode
 dist
 .DS_Store
