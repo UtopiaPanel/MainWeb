@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/UtopiaWeb/static/js/main.8b7aa71c.js",
+    "static/media/Staff.jpg": "/UtopiaWeb/static/media/Staff.e33175e0853e1381c550.jpg",
+    "index.html": "/UtopiaWeb/index.html",
+    "main.8b7aa71c.js.map": "/UtopiaWeb/static/js/main.8b7aa71c.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8b7aa71c.js"
+  ]
+}
