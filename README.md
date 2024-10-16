@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This project aims to create an online platform for Utopia Panel @ UW.
+This project aims to create [an online platform](https://utopiapanel.github.io/UtopiaWeb) for Utopia Panel @ UW.
 
 ### Project Goals:
 
