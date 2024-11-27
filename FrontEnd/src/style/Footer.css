@@ -1,8 +1,10 @@
-/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .footer {
-    background-color: #ddd; /* Made the upper part of the footer much lighter (closer to white) */
-    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 50px;
+    border-top: 1px solid #777777;
+    color: #000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -21,9 +23,14 @@
     margin-bottom: 10px;
 }
 
-.icons a {
-    margin-right: 15px;
-    display: inline-block;
+.social-media div {
+    display: block;
+    margin-bottom: 5px; /* Add 5px space between each line */
+}
+
+.social-media div a {
+    text-decoration: underline;
+    gap: 10px;
 }
 
 .search {
@@ -43,7 +50,7 @@
 
 .search-bar input {
     padding: 10px;
-    border: none;
+    border: 1px solid #000; /* Add a thin black border */
     border-radius: 4px;
     margin-right: 5px;
     width: 200px;

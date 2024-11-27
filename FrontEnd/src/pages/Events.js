@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UpcomingEvent = () => {
+const Events = () => {
     return (
         <div>
             <h1>Upcoming Events</h1>
@@ -13,4 +13,4 @@ const UpcomingEvent = () => {
     );
 };
 
-export default UpcomingEvent;
+export default Events;
