@@ -1,7 +1,7 @@
 // Footer.js
 
 import React from 'react';
-import './Footer.css';  // Import the CSS for styling the footer
+import '../style/Footer.css';  // Import the CSS for styling the footer
 
 const Footer = () => {
   return (
@@ -27,24 +27,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
-      {/* Footer bottom navigation bar */}
-      <div className="footer-bottom-nav">
-        <div className="bottom-nav">
-          <nav>
-            <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/news">News</a></li>
-              <li><a href="/about_us">About Us</a></li>
-              <li><a href="/forum">Forum</a></li>
-              <li><a href="/links">Links</a></li>
-              <li><a href="/chinese">简体中文</a></li>
-              <li><a href="/pop_events">Pop Events</a></li>
-            </ul>
-          </nav>
-          <p>© Copyright Utopia@UW 2019-2025</p>
-        </div>
-      </div>
     </>
   );
 };
