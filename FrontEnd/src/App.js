@@ -1,24 +1,27 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import EventCalendar from './pages/EventCalendar';
 import JoinUs from './pages/JoinUs';
-import Gallery from './pages/Gallery';
 import Resources from './pages/Resources';
+import Gallery from './pages/Gallery';
+import UpcomingEvent from './pages/UpcomingEvent';
+import PastEvent from './pages/PastEvent';
 
-function App() {
+const App = () => {
     return (
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/UtopiaWeb" element={<Home />} />
-                <Route path="/events" element={<EventCalendar />} />
-                <Route path="/join_us" element={<JoinUs />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/events/upcoming" element={<UpcomingEvent />} />
+                <Route path="/events/past" element={<PastEvent />} />
+                <Route path="/join" element={<JoinUs />} />
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/gallery" element={<Gallery />} />
             </Routes>
         </Router>
     );
-}
+};
 
 export default App;
