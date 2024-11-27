@@ -7,6 +7,7 @@ import Resources from './pages/Resources';
 import Gallery from './pages/Gallery';
 import UpcomingEvent from './pages/UpcomingEvent';
 import PastEvent from './pages/PastEvent';
+import Footer from "./components/Footer";
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/gallery" element={<Gallery />} />
             </Routes>
+            <Footer />
         </Router>
     );
 };
