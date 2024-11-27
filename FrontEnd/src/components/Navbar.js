@@ -11,12 +11,12 @@ const Navbar = () => {
 
     return (
         <header>
-            <Link to="/" className={status('/')}>
+            <Link to="/UtopiaWeb" className={status('/UtopiaWeb')}>
                 <img src={logo} alt="Logo" className={"logo"}/>
             </Link>
             <nav>
                 <ul className={"nav_links"}>
-                    <li><Link to="/" className={status('/')}> Home </Link></li>
+                    <li><Link to="/UtopiaWeb" className={status('/UtopiaWeb')}> Home </Link></li>
                     <li><Link to="/events" className={status('/events')}>Events</Link></li>
                     <li><Link to="/join" className={status('/join')}>Join Us</Link></li>
                     <li><Link to="/resources" className={status('/resources')}>Resources</Link></li>

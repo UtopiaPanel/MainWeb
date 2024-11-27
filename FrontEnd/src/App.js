@@ -13,7 +13,7 @@ const App = () => {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/UtopiaWeb" element={<Home />} />
                 <Route path="/events" element={<Events />} />
                 <Route path="/join" element={<JoinUs />} />
                 <Route path="/resources" element={<Resources />} />
