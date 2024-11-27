@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer'; // Import Footer component
 
 const EventCalendar = () => {
   return (
@@ -17,8 +16,6 @@ const EventCalendar = () => {
         <p>地点：</p>
         <p>（描述）</p>
       </div>
-
-      <Footer />  {/* Add Footer component */}
     </div>
   );
 };

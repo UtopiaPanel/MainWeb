@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer'; // Import Footer component
 
 const Home = () => {
   return (
@@ -17,8 +16,6 @@ const Home = () => {
           <li>活动3</li>
         </ul>
       </div>
-
-      <Footer />  {/* Add Footer component */}
     </div>
   );
 };
