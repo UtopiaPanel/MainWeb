@@ -1,0 +1,115 @@
+/* Footer.css */
+
+.footer {
+    background-color: #ddd; /* Made the upper part of the footer much lighter (closer to white) */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-media {
+    flex: 1;
+}
+
+.social-media h2 {
+  color: #000; /* Changed color to black */
+  font-size: 1rem; /* Made text smaller */
+    margin-bottom: 10px;
+}
+
+.icons a {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.search {
+    flex: 1;
+}
+
+.search h2 {
+  color: #000; /* Changed color to black */
+  font-size: 1rem; /* Made text smaller */
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+.footer-bottom-nav {
+    background-color: #222;
+    color: #fff;
+    text-align: right; /* Align the menu to the right */
+    padding: 5px 20px; /* Reduced the height of the lower part of the footer and added padding to the right */
+    margin-top: 0;
+}
+
+.bottom-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 0.75rem;
+}
+
+.bottom-nav p {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.footer-short {
+    background-color: #222; /* Dark gray footer */
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0; /* No gap between footers */
+}
+
+.footer-menu-bar {
+    background-color: #FFD700; /* Yellow background */
+    color: #fff;
+    text-align: right; /* Align the menu to the right */
+    padding: 5px 20px; /* Reduced height and added padding to the right */
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+
+.footer-menu {
+    background-color: #f1c40f; /* Yellow background for the footer menu bar */
+    color: #000;
+    text-align: right;
+    padding: 10px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    font-size: 0.75rem; /* Smaller menu items */
+}
+
+.footer-menu ul li {
+    margin-right: 20px; /* Add margin to shift menu items rightward */
+}
+
+.footer-menu ul li a {
+    color: #000;
+    text-decoration: none;
+}
