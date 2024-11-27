@@ -1,37 +1,42 @@
-// Navbar.js (including '华大乌托邦' logo)
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import { Link, useLocation } from 'react-router-dom';
+import '../style/Navbar.css';
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-
+    const location = useLocation();
     const toggleDropdown = () => {
         setIsDropdownVisible(!isDropdownVisible);
     };
 
     return (
-        <nav style={{ display: 'flex', justifyContent: 'space-between', padding: '15px 30px' }}>
-            <div className="logo" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>华大乌托邦</div>
-            <ul style={{ listStyle: 'none', display: 'flex', gap: '20px', margin: '0', padding: '0' }}>
-                <li><Link to="/">Home</Link></li>
-                <li 
-                    onMouseEnter={toggleDropdown} 
-                    onMouseLeave={toggleDropdown}
-                >
-                    Events
+        <header>
+            <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+                <img src={logo} alt="Logo" className={"logo"}/>
+            </Link>
+            <nav>
+                <ul className={"nav_links"}>
+                    <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}> Home </Link></li>
+                        <li
+                            onMouseEnter={toggleDropdown}
+                            onMouseLeave={toggleDropdown}
+                            className="events-item"
+                        >
+                            <span className={location.pathname.includes('/events/') ? 'active' : ''}>Events</span>
                     {isDropdownVisible && (
-                        <ul className="dropdown" style={{ position: 'absolute', backgroundColor: '#e0e0e0', listStyle: 'none', padding: '10px' }}>
-                            <li><Link to="/events/upcoming">Upcoming Events</Link></li>
-                            <li><Link to="/events/past">Past Events</Link></li>
-                        </ul>
-                    )}
-                </li>
-                <li><Link to="/join">Join Us</Link></li>
-                <li><Link to="/resources">Resources</Link></li>
-                <li><Link to="/gallery">Gallery</Link></li>
-            </ul>
-        </nav>
+                        <ul className="dropdown">
+                        <li><Link to="/events/upcoming" className={location.pathname === '/events/upcoming' ? 'active' : ''}>Upcoming Events</Link></li>
+                                <li><Link to="/events/past" className={location.pathname === '/events/past' ? 'active' : ''}>Past Events</Link></li>
+                            </ul>
+                        )}
+                    </li>
+                    <li><Link to="/join" className={location.pathname === '/join' ? 'active' : ''}>Join Us</Link></li>
+                    <li><Link to="/resources" className={location.pathname === '/resources' ? 'active' : ''}>Resources</Link></li>
+                    <li><Link to="/gallery" className={location.pathname === '/gallery' ? 'active' : ''}>Gallery</Link></li>
+                </ul>
+            </nav>
+        </header>
     );
 };
 
