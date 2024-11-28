@@ -41,7 +41,8 @@ header {
 }
 
 .nav_links li a.active {
-    text-decoration: underline;
+    color: #4682b4;   
+    font-weight: bold;
 }
 
 .nav_links li a {
@@ -49,7 +50,7 @@ header {
 }
 
 .nav_links li a:hover {
-    color: #7449ff;
+    color: #4682b4;
 }
 
 .events-item span {

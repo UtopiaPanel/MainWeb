@@ -14,33 +14,49 @@
 }
 
 .social-media {
-    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    gap: 10px; /* Space between the heading and the links */
 }
 
 .social-media h2 {
-  color: #000; /* Changed color to black */
-  font-size: 1rem; /* Made text smaller */
-    margin-bottom: 10px;
+    font-size: 1rem; /* Adjust font size for the heading */
+    margin: 0; /* Remove default margin */
+}
+
+.social-media .links {
+    display: flex; /* Align the links horizontally */
+    gap: 20px; /* Space between the links */
+    flex-wrap: wrap; /* Allow wrapping if needed on smaller screens */
 }
 
 .social-media div {
-    display: block;
-    margin-bottom: 5px; /* Add 5px space between each line */
+    display: inline-block; /* Keep each div inline */
+    margin: 0; /* Remove any margins */
 }
 
-.social-media div a {
-    text-decoration: underline;
-    gap: 10px;
+.social-media a {
+    text-decoration: none; /* Remove underlines from links */
+    color: inherit; /* Ensure links inherit the text color from the parent */
+}
+
+.social-media a:hover {
+    color: #4682b4; /* Change color to steel blue on hover */
 }
 
 .search {
     flex: 1;
+    text-align: right; /* Align search section to the right */
+    margin-right: 20px; /* Space between the right edge */
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: flex-end; /* Align content to the right */
 }
 
 .search h2 {
-  color: #000; /* Changed color to black */
-  font-size: 1rem; /* Made text smaller */
-    margin-bottom: 10px;
+    font-size: 0.85rem; /* Shrunk font size for the heading */
+    margin-bottom: 10px; /* Space between the heading and the search bar */
+    color: #000; /* Ensure the text color remains black */
 }
 
 .search-bar {
