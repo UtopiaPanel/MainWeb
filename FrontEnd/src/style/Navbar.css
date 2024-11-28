@@ -20,14 +20,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 15px 10%; /* Reduced top and bottom padding to half */
 }
 
 .logo {
     cursor: pointer;
     margin-left: -35px;
     margin-right: auto;
-    width: 125px;
+    width: 150px; /* Increase logo size */
 }
 
 .nav_links {
