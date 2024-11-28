@@ -8,7 +8,7 @@
   
   /* Hero Section */
   .hero {
-    background-image: url(); /* Add your image path here */
+    background-image: url('../assets/西雅图新生会Staff.jpg'); /* Add your image path here */
     background-color: #ffffff;
     background-size: cover;
     background-position: bottom center;
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(73, 73, 73);
+    color: #ffffff;
     text-align: center;
     padding: 20px;
   }
@@ -95,24 +95,5 @@
     color: #555;
   }
   
-  /* Call to Action Section */
-  .cta {
-    text-align: center;
-    padding: 40px 20px;
-  }
   
-  .cta-button {
-    background-color: #4682b4;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #5a8fbc;
-  }
   
