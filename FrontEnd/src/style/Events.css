@@ -1,0 +1,222 @@
+/* General Page Layout */
+/* General Page Layout */
+.events-page {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove padding to make content span full width */
+  }
+  
+  /* Hero Section with Background Image */
+  .hero {
+    background-image: url('../assets/西雅图新生会Staff.jpg'); /* Use your background image */
+    background-size: cover;  /* Make sure the image covers the section */
+    background-position: top center;  /* Align the image at the top */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 300px; /* Set the height to 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000; /* Make the text white for contrast */
+    margin: 0; /* Remove margin around the hero section */
+    padding: 0; /* Remove padding around the hero section */
+    margin-bottom: 50px;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Timeline Container */
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-item {
+    display: flex;
+    justify-content: space-between; /* Space items on both sides */
+    align-items: center;
+    margin-bottom: 60px; /* Increased bottom margin for larger spacing between events */
+    position: relative;
+  }
+  
+  .timeline-content {
+    background-color: #ffffff;
+    padding: 30px; /* Increased padding */
+    border-radius: 8px;
+    width: 90%; /* Increased width to make it twice as large */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased box-shadow for more emphasis */
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 60px; /* Increased left margin */
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-right: 60px; /* Increased right margin */
+  }
+  
+  /* Date Styling */
+  .timeline-date {
+    font-size: 1.4rem; /* Increased font size to make the date larger */
+    color: #4682b4;
+    font-weight: bold;
+    padding: 10px 20px; /* Increased padding for the date */
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow to make date pop */
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-date {
+    margin-left: 60px; /* Increased left margin for odd items */
+  }
+  
+  .timeline-item:nth-child(even) .timeline-date {
+    margin-right: 60px; /* Increased right margin for even items */
+  }
+  
+  /* Swap the content for the second event */
+  .timeline-item:nth-child(2) .timeline-content {
+    margin-right: 60px; /* Move the content of event 2 to the right */
+  }
+  
+  .timeline-item:nth-child(2) .timeline-date {
+    margin-left: 60px; /* Move the date of event 2 to the left */
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .timeline {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    /* Timeline Container */
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px; /* Increased bottom margin for larger spacing between events */
+    position: relative;
+    flex-direction: column; /* Stack image and text vertically */
+  }
+  
+  .timeline-content {
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Styling (Top Half) */
+  .event-image img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a max height for the image */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* Event Details (Bottom Half) */
+  .event-details {
+    padding: 20px;
+  }
+  
+  .event-details h3 {
+    font-weight: bold; /* Make the header bold */
+    font-size: 1.5rem;
+  }
+  
+  .event-details p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Date Styling */
+  /* Timeline Axis (Vertical Line) */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Line thickness */
+    background-color: #4682b4; /* Line color */
+    z-index: 1;
+  }
+  
+  /* Date Styling */
+  .timeline-date {
+    font-size: 2rem;
+    color: #4682b4;
+    font-weight: bold;
+    padding: 12px 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%; /* Center the date on the timeline axis */
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2; /* Ensure the date is above the timeline */
+  }
+  
+  /* Connectors for the Dates */
+  .timeline-item:nth-child(odd) .timeline-date::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -50%; /* Position the connector to the left of the date */
+    width: 50%;
+    height: 2px;
+    background-color: #4682b4; /* Connector line color */
+    z-index: 1;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-date::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%; /* Position the connector to the right of the date */
+    width: 50%;
+    height: 2px;
+    background-color: #4682b4; /* Connector line color */
+    z-index: 1;
+  }
+  
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .timeline-item {
+      flex-direction: column; /* Stack the sections vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .event-image img {
+      max-height: 250px; /* Allow more space for images on smaller screens */
+    }
+  
+    .event-details {
+      width: 100%; /* Make content take full width */
+      text-align: center; /* Center text on small screens */
+    }
+  
+    .timeline-date {
+      font-size: 2rem;
+      padding: 8px 16px;
+      margin-top: 10px;
+    }
+  }
+  
+  }
+  

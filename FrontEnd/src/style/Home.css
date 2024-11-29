@@ -11,7 +11,7 @@
     background-image: url('../assets/西雅图新生会Staff.jpg'); /* Add your image path here */
     background-color: #ffffff;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
     background-repeat: no-repeat; /* Ensure the image does not repeat */
     height: 300px;
     display: flex;
