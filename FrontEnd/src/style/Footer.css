@@ -3,8 +3,8 @@
 .footer {
     font-family: "Montserrat", sans-serif;
     margin-top: 50px;
-    border-top: 1px solid #777777;
-    color: #000;
+    background-color: #4a4a4a;
+    color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;

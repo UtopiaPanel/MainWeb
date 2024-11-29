@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #dadada;
-    caret-color: transparent;
-}
-
 li, a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -17,6 +9,11 @@ li, a {
 }
 
 header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #dadada;
+    caret-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
