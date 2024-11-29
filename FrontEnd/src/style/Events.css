@@ -143,23 +143,57 @@
   }
   
   /* Date Styling */
+  /* Timeline Axis (Vertical Line) */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Line thickness */
+    background-color: #4682b4; /* Line color */
+    z-index: 1;
+  }
+  
+  /* Date Styling */
   .timeline-date {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: #4682b4;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%; /* Center the date on the timeline axis */
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2; /* Ensure the date is above the timeline */
   }
   
-  .timeline-item:nth-child(odd) .timeline-date {
-    margin-left: 60px;
+  /* Connectors for the Dates */
+  .timeline-item:nth-child(odd) .timeline-date::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -50%; /* Position the connector to the left of the date */
+    width: 50%;
+    height: 2px;
+    background-color: #4682b4; /* Connector line color */
+    z-index: 1;
   }
   
-  .timeline-item:nth-child(even) .timeline-date {
-    margin-right: 60px;
+  .timeline-item:nth-child(even) .timeline-date::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%; /* Position the connector to the right of the date */
+    width: 50%;
+    height: 2px;
+    background-color: #4682b4; /* Connector line color */
+    z-index: 1;
   }
+  
   
   /* Responsive adjustments for smaller screens */
   @media (max-width: 768px) {
