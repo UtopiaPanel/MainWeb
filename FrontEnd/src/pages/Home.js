@@ -30,7 +30,13 @@ const Home = () => {
                 <h2>Highlighted Events</h2>
                 <div className="event-cards">
                     {events.map((event, index) => (
-                        <EventCard key={index} image={event.image} title={event.title} description={event.description} />
+                        <EventCard
+                            key={index}
+                            title={event.title}
+                            description={event.description}
+                            link={event.link}
+                            image={event.image}
+                        />
                     ))}
                 </div>
             </section>
@@ -39,9 +45,9 @@ const Home = () => {
 };
 
 // 事件卡片组件
-const EventCard = ({ image, title, description }) => {
+const EventCard = ({ title, description, link, image }) => {
     return (
-        <div className="event-card">
+        <div className="event-card" onClick={() => window.open(link, '_blank')}>
             <div className="event-image">
                 <img src={image} alt={title} />
             </div>

@@ -3,10 +3,6 @@ import '../style/Events.css';
 import background from '../assets/background.jpg';
 import { eventList } from '../EventList';
 
-const handleEventClick = (link) => {
-    window.open(link, '_blank');
-};
-
 const Events = () => {
     // 选取最新的 5 个活动
     const events = eventList.slice(0, 5);
@@ -23,7 +19,7 @@ const Events = () => {
                     <div className="timeline-item" key={index}>
                         <div
                             className={`timeline-content ${index % 2 === 0 ? 'left' : 'right'}`}
-                            onClick={() => handleEventClick(event.link)}
+                            onClick={() => window.open(event.link, '_blank')}
                         >
                             <div className="event-image">
                                 <img src={event.image} alt={event.title} />
