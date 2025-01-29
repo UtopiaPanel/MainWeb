@@ -1,0 +1,62 @@
+/* 页面整体样式 */
+.resources-page {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 标题部分 */
+  .background-image {
+    height: 300px; /* 固定高度 */
+    width: 100%; /* 充满宽度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff; /* 设置文字为黑色 */
+    text-shadow: none; /* 去掉文字阴影 */
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000; /* 黑色文字 */
+    margin: 0;
+  }
+  
+  /* 推文板块样式 */
+  .posts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 板块之间的间距 */
+    padding: 20px;
+  }
+  
+  .post-card {
+    background-color: #f9f9f9; /* 卡片背景颜色 */
+    border: 1px solid #ccc; /* 边框颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    transition: transform 0.2s; /* 鼠标悬停效果 */
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px); /* 鼠标悬停时轻微上移 */
+  }
+  
+  .post-card a {
+    text-decoration: none; /* 移除下划线 */
+    font-size: 1.25rem;
+    color: #0073e6; /* 链接文字颜色 */
+  }
+  
+  .post-card a:hover {
+    text-decoration: underline; /* 鼠标悬停时加下划线 */
+  }
+  
