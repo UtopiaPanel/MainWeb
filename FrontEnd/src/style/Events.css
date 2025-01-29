@@ -54,7 +54,13 @@
     border-radius: 8px;
     width: 90%; /* Increased width to make it twice as large */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased box-shadow for more emphasis */
+    cursor: pointer; /* 变为点击手型 */
+    transition: background-color 0.3s ease; /* 添加背景颜色过渡 */
   }
+
+.timeline-item .timeline-content:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* 添加轻微背景色 */
+}
   
   .timeline-item:nth-child(odd) .timeline-content {
     margin-left: 60px; /* Increased left margin */

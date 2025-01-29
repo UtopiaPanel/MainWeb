@@ -26,7 +26,8 @@ const JoinUs = () => {
             </div>
             <div className="text-section">
               <p>
-                Welcome to our club! Our team is dedicated to creating engaging
+                Welcome to our club! <br/>
+                Our team is dedicated to creating engaging
                 events and building a supportive community at UW.
               </p>
             </div>
@@ -37,18 +38,6 @@ const JoinUs = () => {
             <img src={StaffImage} alt="Team" />
           </div>
         </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="contact-section">
-        <h2>联系方式</h2>
-        <ul>
-          <li>Website: cssauw.org</li>
-          <li>WeChat: Utopia_UW</li>
-          <li>小红书: 华大乌托邦</li>
-          <li>Instagram: utopiaatuw</li>
-          <li>Email: utopiauw@uw.edu</li>
-        </ul>
       </section>
     </div>
   );
